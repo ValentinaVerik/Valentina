@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-file_path = "C:/Users/GS/PycharmProjects/pythonKursas/gintarine2.csv"
+file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/gintarine2.csv"
 
 gintarine_df = pd.read_csv(file_path)
 
