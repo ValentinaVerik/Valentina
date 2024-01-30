@@ -1,60 +1,60 @@
 pavadinimas,gamintojas,kaina
-"GRIPPOSTAD C, 200 mg + 150 mg + 25 mg + 2,5 mg, Kietosios kapsulės, N24",GRIPPOSTAD,"{'price': 437, 'regularPrice': 437, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"PARACETAMOL-RATIOPHARM, 250 mg, Žvakutės, N10",KITA,"{'price': 299, 'regularPrice': 299, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"PARACETAMOL ACTAVIS, 500mg, Tabletės, N20",PARACETAMOL,"{'price': 199, 'regularPrice': 199, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"PARACETAMOL-RATIOPHARM, 125 mg, Žvakutės, N10",KITA,"{'price': 303, 'regularPrice': 303, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Paracetamolis SANITAS, 500mg, Tabletės, N20",KITA,"{'price': 295, 'regularPrice': 295, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"SOLPADEINE EXPRESS 500 mg/65 mg, Šnypščiosios tabletės, N16",SOLPADEINE,"{'price': 449, 'regularPrice': 449, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"PARACETAMOL ZENTIVA, 500mg, 20 tablečių, Tabletės, N20",PARACETAMOL ZENTIVA,"{'price': 195, 'regularPrice': 195, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"SOLPADEINE, 500 mg + 8 mg + 30 mg, tirpinamosios tabletės, N12",SOLPADEINE,"{'price': 508, 'regularPrice': 508, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"NEOCITRAMONAS, 240mg+200mg+30mg, Tabletės, N20",NEOCITRAMONAS,"{'price': 358, 'regularPrice': 358, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"SOLPADEINE, Tabletės, N12",SOLPADEINE,"{'price': 476, 'regularPrice': 476, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Daleron COLD3, plėvele dengtos tabletės, N24",DALERON,"{'price': 731, 'regularPrice': 731, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Gripex, plėvele dengtos tabletės, N24",GRIPEX,"{'price': 845, 'regularPrice': 845, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"GRIPEX THERMAL, 650mg+50mg+10mg, milteliai geriamajam tirpalui, N8",GRIPEX,"{'price': 299, 'regularPrice': 299, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"GRIPEX THERMAL, 1000mg+100mg+12,2mg, milteliai geriamajam tirpalui, N8",GRIPEX,"{'price': 399, 'regularPrice': 399, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Apap (vaikams), 250mg, Granulės, N10",APAP,"{'price': 616, 'regularPrice': 616, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"TARAFEN, plėvele dengtos tabletės, N20",TARAFEN,"{'price': 824, 'regularPrice': 824, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Gripex, plėvele dengtos tabletės, N12",GRIPEX,"{'price': 556, 'regularPrice': 556, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"COLDREX, Tabletės, N24",COLDREX,"{'price': 741, 'regularPrice': 741, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"COLDREX HOTREM LEMON, milteliai geriamajam tirpalui, N10",COLDREX,"{'price': 678, 'regularPrice': 678, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Daleron COLD3, plėvele dengtos tabletės, N12",DALERON,"{'price': 479, 'regularPrice': 479, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"FERVEX, granulės geriamajam tirpalui, N8",FERVEX,"{'price': 735, 'regularPrice': 735, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"COLDREX MAXGRIP LEMON, 1000mg+10mg+40mg, milteliai geriamajam tirpalui, N10",COLDREX,"{'price': 699, 'regularPrice': 699, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"EFFERALGAN, 80 mg, Žvakutės, N10",EFFERALGAN,"{'price': 369, 'regularPrice': 369, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"METAFENEX, 200mg+500mg, plėvele dengtos tabletės, N10",METAFENEX,"{'price': 440, 'regularPrice': 440, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"EFFERALGAN  geriamasis tirpalas vaikams, 90 ml, Geriamasis tirpalas, N1",EFFERALGAN,"{'price': 500, 'regularPrice': 500, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"COLDREX MAXGRIP LEMON 1000mg/10mg/40mg, milteliai geriamajam tirpalui, N5",COLDREX,"{'price': 420, 'regularPrice': 420, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"NEOASKOFENAS 200 mg/200 mg/40 mg, Tabletės, N20",NEOASKOFENAS,"{'price': 372, 'regularPrice': 372, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"TEMPIER 500 mg/30 mg/15 mg milteliai geriamajam tirpalui, milteliai geriamajam tirpalui, N6",TEMPIER,"{'price': 488, 'regularPrice': 488, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"GRIPEX THERMAL, 1000mg/100mg/12,2mg, milteliai geriamajam tirpalui, N12",GRIPEX,"{'price': 932, 'regularPrice': 932, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"EFFERALGAN, 150mg, Žvakutės, N10",EFFERALGAN,"{'price': 409, 'regularPrice': 409, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"COLDREX, Tabletės, N12",COLDREX,"{'price': 484, 'regularPrice': 484, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"EFFERALGAN C 330 mg/200 mg, Šnypščiosios tabletės, N20",EFFERALGAN,"{'price': 472, 'regularPrice': 472, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"COLDREX HotRem LEMON 750mg+10mg+60mg, milteliai geriamajam tirpalui, N5",COLDREX,"{'price': 444, 'regularPrice': 444, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"COLDREX HotRem HONEY & LEMON 750mg+10mg+60mg, milteliai geriamajam tirpalui, N10",COLDREX,"{'price': 787, 'regularPrice': 787, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"FERVEX vaikams, granulės geriamajam tirpalui, N8",FERVEX,"{'price': 735, 'regularPrice': 735, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"EFFERALGAN, Šnypščiosios tabletės, N16",EFFERALGAN,"{'price': 389, 'regularPrice': 389, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"ALIFLUSIN 500 mg/200 mg/4 mg, Šnypščiosios tabletės, N20",ALIFLUSIN,"{'price': 708, 'regularPrice': 708, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"PARAMAX RAPID, 500mg, Tabletės, N20",PARAMAX RAPID,"{'price': 242, 'regularPrice': 242, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"ALIFLUSIN 500 mg/200 mg/4 mg, Šnypščiosios tabletės, N10",ALIFLUSIN,"{'price': 460, 'regularPrice': 460, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"SARIDON, Tabletės, N10",SARIDON,"{'price': 215, 'regularPrice': 215, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"PARACETAMOLIS SANITAS, 500mg, Tabletės, N100",PARACETAMOLIS SANITAS,"{'price': 329, 'regularPrice': 329, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"APAP, 500mg, plėvele dengtos tabletės, N24",APAP,"{'price': 371, 'regularPrice': 371, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"GRIPEX THERMAL, 300/20/5 mg, milteliai geriamajam tirpalui, N12",GRIPEX,"{'price': 754, 'regularPrice': 754, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"FERVEX suaugusiems, be cukraus, granulės geriamajam tirpalui, N8",FERVEX,"{'price': 843, 'regularPrice': 843, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Theraflu 500 mg/6,1 mg/100 mg kietosios kapsulės, Kietosios kapsulės, N16",THERAFLU,"{'price': 517, 'regularPrice': 517, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"GRIPEX, 500mg/30mg/15mg, plėvele dengtos tabletės, N10",GRIPEX,"{'price': 299, 'regularPrice': 299, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"GRIPEX, 500mg/30mg/15mg, plėvele dengtos tabletės, N20",GRIPEX,"{'price': 886, 'regularPrice': 886, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"APAP, plėvele dengtos tabletės, N12",APAP,"{'price': 218, 'regularPrice': 218, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"ADOBIL, 500 mg/150 mg, plėvele dengtos tabletės, N10",ADOBIL,"{'price': 398, 'regularPrice': 398, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"COCODAMOL, 30mg/500mg, plėvele dengtos tabletės, N30",COCODAMOL,"{'price': 796, 'regularPrice': 796, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Panadol, 120mg/5ml, 100 ml, geriamoji suspensija, N1",PANADOL,"{'price': 545, 'regularPrice': 545, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"COLDREX Maxgrip MENTHOL & BERRIES, milteliai geriamajam tirpalui, N10",COLDREX,"{'price': 787, 'regularPrice': 787, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Theraflu ND 1000 mg/60 mg/30 mg, milteliai geriamajam tirpalui, N10",THERAFLU,"{'price': 767, 'regularPrice': 767, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Theraflu NT 1000mg+60mg+30mg+4mg, milteliai geriamajam tirpalui, N10",THERAFLU,"{'price': 767, 'regularPrice': 767, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"NEOASKOFENAS, 200mg/200mg/40mg, Tabletės, N100",NEOASKOFENAS,"{'price': 757, 'regularPrice': 757, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"NEOCITRAMONAS, 240mg/200mg/30mg, Tabletės, N100",NEOCITRAMONAS,"{'price': 795, 'regularPrice': 795, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"ULTRACOD, 30mg/500mg, Tabletės, N30",ULTRACOD,"{'price': 788, 'regularPrice': 788, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Theraflu NT, milteliai geriamajam tirpalui, N6",THERAFLU,"{'price': 557, 'regularPrice': 557, 'pricePerUnit': None, 'regularPricePerUnit': None}"
-"Theraflu ND, milteliai geriamajam tirpalui, N6",THERAFLU,"{'price': 557, 'regularPrice': 557, 'pricePerUnit': None, 'regularPricePerUnit': None}"
+"GRIPPOSTAD C, 200 mg + 150 mg + 25 mg + 2,5 mg, Kietosios kapsulės, N24",GRIPPOSTAD,437
+"PARACETAMOL-RATIOPHARM, 250 mg, Žvakutės, N10",KITA,299
+"PARACETAMOL ACTAVIS, 500mg, Tabletės, N20",PARACETAMOL,199
+"PARACETAMOL-RATIOPHARM, 125 mg, Žvakutės, N10",KITA,303
+"Paracetamolis SANITAS, 500mg, Tabletės, N20",KITA,295
+"SOLPADEINE EXPRESS 500 mg/65 mg, Šnypščiosios tabletės, N16",SOLPADEINE,449
+"PARACETAMOL ZENTIVA, 500mg, 20 tablečių, Tabletės, N20",PARACETAMOL ZENTIVA,195
+"SOLPADEINE, 500 mg + 8 mg + 30 mg, tirpinamosios tabletės, N12",SOLPADEINE,508
+"NEOCITRAMONAS, 240mg+200mg+30mg, Tabletės, N20",NEOCITRAMONAS,358
+"SOLPADEINE, Tabletės, N12",SOLPADEINE,476
+"Daleron COLD3, plėvele dengtos tabletės, N24",DALERON,731
+"Gripex, plėvele dengtos tabletės, N24",GRIPEX,845
+"GRIPEX THERMAL, 650mg+50mg+10mg, milteliai geriamajam tirpalui, N8",GRIPEX,299
+"GRIPEX THERMAL, 1000mg+100mg+12,2mg, milteliai geriamajam tirpalui, N8",GRIPEX,399
+"Apap (vaikams), 250mg, Granulės, N10",APAP,616
+"TARAFEN, plėvele dengtos tabletės, N20",TARAFEN,824
+"Gripex, plėvele dengtos tabletės, N12",GRIPEX,556
+"COLDREX, Tabletės, N24",COLDREX,741
+"COLDREX HOTREM LEMON, milteliai geriamajam tirpalui, N10",COLDREX,678
+"Daleron COLD3, plėvele dengtos tabletės, N12",DALERON,479
+"FERVEX, granulės geriamajam tirpalui, N8",FERVEX,735
+"COLDREX MAXGRIP LEMON, 1000mg+10mg+40mg, milteliai geriamajam tirpalui, N10",COLDREX,699
+"EFFERALGAN, 80 mg, Žvakutės, N10",EFFERALGAN,369
+"METAFENEX, 200mg+500mg, plėvele dengtos tabletės, N10",METAFENEX,440
+"EFFERALGAN  geriamasis tirpalas vaikams, 90 ml, Geriamasis tirpalas, N1",EFFERALGAN,500
+"COLDREX MAXGRIP LEMON 1000mg/10mg/40mg, milteliai geriamajam tirpalui, N5",COLDREX,420
+"NEOASKOFENAS 200 mg/200 mg/40 mg, Tabletės, N20",NEOASKOFENAS,372
+"TEMPIER 500 mg/30 mg/15 mg milteliai geriamajam tirpalui, milteliai geriamajam tirpalui, N6",TEMPIER,488
+"GRIPEX THERMAL, 1000mg/100mg/12,2mg, milteliai geriamajam tirpalui, N12",GRIPEX,932
+"EFFERALGAN, 150mg, Žvakutės, N10",EFFERALGAN,409
+"COLDREX, Tabletės, N12",COLDREX,484
+"EFFERALGAN C 330 mg/200 mg, Šnypščiosios tabletės, N20",EFFERALGAN,472
+"COLDREX HotRem LEMON 750mg+10mg+60mg, milteliai geriamajam tirpalui, N5",COLDREX,444
+"COLDREX HotRem HONEY & LEMON 750mg+10mg+60mg, milteliai geriamajam tirpalui, N10",COLDREX,787
+"FERVEX vaikams, granulės geriamajam tirpalui, N8",FERVEX,735
+"EFFERALGAN, Šnypščiosios tabletės, N16",EFFERALGAN,389
+"ALIFLUSIN 500 mg/200 mg/4 mg, Šnypščiosios tabletės, N20",ALIFLUSIN,708
+"PARAMAX RAPID, 500mg, Tabletės, N20",PARAMAX RAPID,242
+"ALIFLUSIN 500 mg/200 mg/4 mg, Šnypščiosios tabletės, N10",ALIFLUSIN,460
+"SARIDON, Tabletės, N10",SARIDON,215
+"PARACETAMOLIS SANITAS, 500mg, Tabletės, N100",PARACETAMOLIS SANITAS,329
+"APAP, 500mg, plėvele dengtos tabletės, N24",APAP,371
+"GRIPEX THERMAL, 300/20/5 mg, milteliai geriamajam tirpalui, N12",GRIPEX,754
+"FERVEX suaugusiems, be cukraus, granulės geriamajam tirpalui, N8",FERVEX,843
+"Theraflu 500 mg/6,1 mg/100 mg kietosios kapsulės, Kietosios kapsulės, N16",THERAFLU,517
+"GRIPEX, 500mg/30mg/15mg, plėvele dengtos tabletės, N10",GRIPEX,299
+"GRIPEX, 500mg/30mg/15mg, plėvele dengtos tabletės, N20",GRIPEX,886
+"APAP, plėvele dengtos tabletės, N12",APAP,218
+"ADOBIL, 500 mg/150 mg, plėvele dengtos tabletės, N10",ADOBIL,398
+"COCODAMOL, 30mg/500mg, plėvele dengtos tabletės, N30",COCODAMOL,796
+"Panadol, 120mg/5ml, 100 ml, geriamoji suspensija, N1",PANADOL,545
+"COLDREX Maxgrip MENTHOL & BERRIES, milteliai geriamajam tirpalui, N10",COLDREX,787
+"Theraflu ND 1000 mg/60 mg/30 mg, milteliai geriamajam tirpalui, N10",THERAFLU,767
+"Theraflu NT 1000mg+60mg+30mg+4mg, milteliai geriamajam tirpalui, N10",THERAFLU,767
+"NEOASKOFENAS, 200mg/200mg/40mg, Tabletės, N100",NEOASKOFENAS,757
+"NEOCITRAMONAS, 240mg/200mg/30mg, Tabletės, N100",NEOCITRAMONAS,795
+"ULTRACOD, 30mg/500mg, Tabletės, N30",ULTRACOD,788
+"Theraflu NT, milteliai geriamajam tirpalui, N6",THERAFLU,557
+"Theraflu ND, milteliai geriamajam tirpalui, N6",THERAFLU,557
