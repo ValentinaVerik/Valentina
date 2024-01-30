@@ -55,7 +55,7 @@ import pandas as pd
 # # print(gintarine_data)
 #
 # df_gintarine=pd.DataFrame(gintarine_data)
-# df_gintarine.to_csv('gintarine.csv', index=False)
+# df_gintarine.to_csv('gintarine1.csv', index=False)
 # print(df_gintarine)
 
 
@@ -78,5 +78,5 @@ for i in range(1,6):
 # print(metu_data)
 
 df_metu=pd.DataFrame(metu_data)
-df_metu.to_csv('metu.csv', index=False)
+df_metu.to_csv('metu1.csv', index=False)
 print(df_metu)
