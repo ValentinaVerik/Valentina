@@ -32,53 +32,53 @@ import json
 
 
 
-# gintarine_data = []
-# for i in range(1, 4):
-#     target = f"https://www.gintarine.lt/search?q=paracetamolis&pagenumber={i}"
-#     response = requests.get(target)
-#     # print(response.status_code) # kodas 200
-#     soup = BeautifulSoup(response.content, 'html.parser')
-#
-#     gintarine = soup.find_all('div', {'data-productid': True})
-#
-#     for product in gintarine:
-#         brand = product.find('div', class_='product__brand').text.strip()
-#         title = product.find('div', class_='product__title').text.strip()
-#         price = product.find('span', class_='product__price--regular').text.strip().replace('<span class="product__price--regular">', '€</span>')
-#         if price:
-#             price_text = price.text.strip().replace('<span class="product__price--regular">', '€</span>')
-#         else:
-#             price_text = " N/A "
-#         gintarine_data.append({
-#             'product__brand': brand,
-#             'product__title': title,
-#             'product__price--regular': price
-#         })
-# # print(gintarine_data)
-#
-# df_gintarine=pd.DataFrame(gintarine_data)
-# df_gintarine.to_csv('gintarine2.csv', index=False)
-# print(df_gintarine)
-
-
-metu_data=[]
-for i in range(1,6):
-    target = f"https://www.100metu.lt/search/p{i}?q=paracetamol"
-    response=requests.get(target)
+gintarine_data = []
+for i in range(1, 4):
+    target = f"https://www.gintarine.lt/search?q=paracetamolis&pagenumber={i}"
+    response = requests.get(target)
     # print(response.status_code) # kodas 200
-    soup=BeautifulSoup(response.content,'html.parser')
+    soup = BeautifulSoup(response.content, 'html.parser')
 
-    metu = soup.find_all('span', class_='info-cont')
-    print(metu)
-    for product in metu:
-        brand = product.find('span', class_='cat').text.strip()
-        title = product.find('span', class_='title').text.strip()
-        price = product.find('span', class_='price').text.strip().replace(' €', '')
+    gintarine = soup.find_all('div', {'data-productid': True})
 
-        metu_data.append([brand, title, price])
+    for product in gintarine:
+        brand = product.find('div', class_='product__brand').text.strip()
+        title = product.find('div', class_='product__title').text.strip()
+        price = product.find('span', class_='product__price--regular')
+        if price:
+            price_text = price.text.strip().replace('€', '')
+        else:
+            price_text = " N/A "
+        gintarine_data.append({
+            'product__brand': brand,
+            'product__title': title,
+            'product__price--regular': price_text
+        })
+#print(gintarine_data)
 
-# print(metu_data)
+df_gintarine=pd.DataFrame(gintarine_data)
+df_gintarine.to_csv('gintarine2.csv', index=False)
+print(df_gintarine)
 
-df_metu=pd.DataFrame(metu_data)
-df_metu.to_csv('metu1.csv', index=False)
-print(df_metu)
+
+# metu_data=[]
+# for i in range(1,6):
+#     target = f"https://www.100metu.lt/search/p{i}?q=paracetamol"
+#     response=requests.get(target)
+#     # print(response.status_code) # kodas 200
+#     soup=BeautifulSoup(response.content,'html.parser')
+#
+#     metu = soup.find_all('span', class_='info-cont')
+#     print(metu)
+#     for product in metu:
+#         brand = product.find('span', class_='cat').text.strip()
+#         title = product.find('span', class_='title').text.strip()
+#         price = product.find('span', class_='price').text.strip().replace(' €', '')
+#
+#         metu_data.append([brand, title, price])
+#
+# # print(metu_data)
+#
+# df_metu=pd.DataFrame(metu_data)
+# df_metu.to_csv('metu1.csv', index=False)
+# print(df_metu)
