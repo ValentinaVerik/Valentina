@@ -1,35 +1,63 @@
+# import requests
+# from bs4 import BeautifulSoup
+# import json
+#
+# eurovaistine_data = []
+# for i in range(1, 3):
+#     target = f"https://www.eurovaistine.lt/paieska/rezultatai?q=paracetamolis&page={i}"
+#     response = requests.get(target)
+#     soup = BeautifulSoup(response.content, 'html.parser')
+#     script_tags = soup.find_all('script', type='application/json')
+#
+#     for script in script_tags:
+#         data_component_name = script.get('data-component-name')
+#         if data_component_name and 'ProductsList' in data_component_name:
+#             products_json = json.loads(script.string)
+#             for product in products_json['products']:
+#                 for variant in product['variants']:
+#                     item = {
+#                         'pavadinimas': variant['name'],
+#                         'gamintojas': variant['brand'],
+#                     }
+#                     eurovaistine_data.append(item)
+#
+# json_data = json.dumps(eurovaistine_data, indent=4, ensure_ascii=False)
+# print(json_data)
+
+
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-# eurovaistine_data=[]
-# for i in range(1,3):
-#     target = f"https://www.eurovaistine.lt/paieska/rezultatai?q=paracetamolis&page={i}"
-# response=requests.get(target)
-# # print(response.status_code) # kodas 200
-# soup=BeautifulSoup(response.content,'html.parser')
-#
-# eurovaistine = soup.find_all('div', class_='productCard')
-# for product in eurovaistine:
-#     brand = product.find('div', class_='brand').text.strip()
-#     title = product.find('div', class_='title').text.strip()
-#     price = product.find('div', class_='productPrice text-end').text.strip()
-# print(eurovaistine_data)
-
-# gintarine_data=[]
-# for i in range(1,4):
+# gintarine_data = []
+# for i in range(1, 4):
 #     target = f"https://www.gintarine.lt/search?q=paracetamolis&pagenumber={i}"
-# response=requests.get(target)
-# # print(response.status_code) # kodas 200
-# soup=BeautifulSoup(response.content,'html.parser')
+#     response = requests.get(target)
+#     # print(response.status_code) # kodas 200
+#     soup = BeautifulSoup(response.content, 'html.parser')
 #
-# gintarine =soup.find_all('div', class_='product product-item product-item-24236')
-# for product in gintarine:
-#     brand = product.find('div', class_='product__brand'). text.strip()
-#     title = product.find('div', class_='product__title').text.strip()
-#     price = product.find('span', class_='product__price--regular').text.strip()
+#     gintarine = soup.find_all('div', {'data-productid': True})
 #
-# print(gintarine_data)
+#     for product in gintarine:
+#         brand = product.find('div', class_='product__brand').text.strip()
+#         title = product.find('div', class_='product__title').text.strip()
+#         price = product.find('span', class_='product__price--regular')
+#         if price:
+#             price_text = price.text.strip()
+#         else:
+#             price_text = " N/A "
+#         gintarine_data.append({
+#             'product__brand': brand,
+#             'product__title': title,
+#             'product__price--regular': price
+#         })
+# # print(gintarine_data)
+#
+# df_gintarine=pd.DataFrame(gintarine_data)
+# df_gintarine.to_csv('gintarine.csv', index=False)
+# print(df_gintarine)
+
 
 metu_data=[]
 for i in range(1,6):
@@ -47,5 +75,8 @@ for i in range(1,6):
 
         metu_data.append([brand, title, price])
 
+# print(metu_data)
 
-print(metu_data)
+df_metu=pd.DataFrame(metu_data)
+df_metu.to_csv('metu.csv', index=False)
+print(df_metu)
