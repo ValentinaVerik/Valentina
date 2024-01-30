@@ -19,12 +19,13 @@ for i in range(1, 3):
                     item = {
                         'pavadinimas': variant['name'],
                         'gamintojas': variant['brand'],
-                        'kaina': variant['price']['price']
+                        'kaina': variant['price']['price'] #.replace(-2, '.').astype(float)
                     }
                     eurovaistine_data.append(item)
 
 json_data = json.dumps(eurovaistine_data, indent=4, ensure_ascii=False)
 # print(json_data)
+
 
 df_eurovaistine = pd.DataFrame(eurovaistine_data)
 df_eurovaistine.to_csv('eurovaistine.csv', index=False)
