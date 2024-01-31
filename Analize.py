@@ -101,5 +101,4 @@ metu2_df = metu1_df.rename(columns={'2':'metu_kaina'})
 df_metu2 = pd.DataFrame(metu2_df)
 df_metu2.to_csv('2metuVA.csv', index=False)
 
-# hello
 
