@@ -1,51 +1,51 @@
-metu_kaina,metu_pavadinimas,metu_gramai,metu_tipas,metu_kiekis
-5.17,THERAFLU, 500 mg/6.1 mg/100 mg, kapsulės, N16
-7.67,THERAFLU ND, 1000 mg/60 mg/30 mg, milteliai geriamajam tirpalui, N10
-7.05,THERAFLU SN, 500 mg/30 mg, milteliai geriamajam tirpalui, N10
-7.67,THERAFLU NT, 1000 mg/60 mg/30 mg/4 mg, milteliai geriamajam tirpalui, N10
-5.23,SOLPADEINE, 500 mg/8 mg/30 mg, tabletės, N12
-4.67,SOLPADEINE Express, 500 mg/65 mg, šnypščiosios tabletės, N16
-5.7,SOLPADEINE, 500 mg/8 mg/30 mg, tirpinamosios tabletės, N12
-2.3,SARIDON, 250 mg/150 mg/50 mg, tabletės, N10
-6.8,PARACETAMOLIS Sanitas, 500 mg, tabletės, N100
-2.31,PARAMAX Rapid, 500 mg, tabletės, N20
-7.67,THERAFLU ND, 1000 mg/60 mg/30 mg, milteliai geriamajam tirpalui, N10
-7.05,THERAFLU SN, 500 mg/30 mg, milteliai geriamajam tirpalui, N10
-7.67,THERAFLU NT, 1000 mg/60 mg/30 mg/4 mg, milteliai geriamajam tirpalui, N10
-5.23,SOLPADEINE, 500 mg/8 mg/30 mg, tabletės, N12
-4.67,SOLPADEINE Express, 500 mg/65 mg, šnypščiosios tabletės, N16
-5.7,SOLPADEINE, 500 mg/8 mg/30 mg, tirpinamosios tabletės, N12
-2.3,SARIDON, 250 mg/150 mg/50 mg, tabletės, N10
-6.8,PARACETAMOLIS Sanitas, 500 mg, tabletės, N100
-2.31,PARAMAX Rapid, 500 mg, tabletės, N20
-3.32,PARACETAMOL-ratiopharm, 125 mg, žvakutės, N10
-7.05,THERAFLU SN, 500 mg/30 mg, milteliai geriamajam tirpalui, N10
-7.67,THERAFLU, NT 1000 mg/60 mg/30 mg/4 mg, milteliai geriamajam tirpalui, N10
-5.23,SOLPADEINE, 500 mg/8 mg/30 mg, tabletės, N12
-4.67,SOLPADEINE, Express 500 mg/65 mg, šnypščiosios tabletės, N16
-5.7,SOLPADEINE, 500 mg/8 mg/30 mg, tirpinamosios tabletės, N12
-2.3,SARIDON, 250 mg/150 mg/50 mg, tabletės, N10
-6.8,PARACETAMOLIS Sanitas, 500 mg, tabletės, N100
-2.31,PARAMAX Rapid, 500 mg, tabletės, N20
-3.32,PARACETAMOL-ratiopharm, 125 mg, žvakutės, N10
-3.65,PARACETAMOL-ratiopharm, 250 mg, žvakutės, N10
-7.67,THERAFLU NT, 1000 mg/60 mg/30 mg/4 mg, milteliai geriamajam tirpalui, N10
-5.23,SOLPADEINE, 500 mg/8 mg/30 mg, tabletės, N12
-4.67,SOLPADEINE Express, 500 mg/65 mg, šnypščiosios tabletės, N16
-5.7,SOLPADEINE 500 mg/8, mg/30 mg tirpinamosios tabletės, N12,
-2.3,SARIDON 250 mg/150, mg/50 mg, tabletės, N10
-6.8,PARACETAMOLIS Sanitas, 500 mg, tabletės, N100
-2.31,PARAMAX Rapid, 500 mg, tabletės, N20
-3.32,PARACETAMOL-ratiopharm, 125 mg, žvakutės, N10
-3.65,PARACETAMOL-ratiopharm, 250 mg, žvakutės, N10
-2.29,PARACETAMOL Actavis, 500 mg, tabletės, N20
-5.23,SOLPADEINE, 500 mg/8 mg/30 mg, tabletės, N12
-4.67,SOLPADEINE Express, 500 mg/65 mg, šnypščiosios tabletės, N16
-5.7,SOLPADEINE, 500 mg/8 mg/30 mg, tirpinamosios tabletės, N12
-2.3,SARIDON, 250 mg/150 mg/50 mg, tabletės, N10
-6.8,PARACETAMOLIS Sanitas, 500 mg, tabletės, N100
-2.31,PARAMAX Rapid, 500 mg, tabletės, N20
-3.32,PARACETAMOL-ratiopharm, 125 mg, žvakutės, N10
-3.65,PARACETAMOL-ratiopharm, 250 mg, žvakutės, N10
-2.29,PARACETAMOL Actavis, 500 mg, tabletės, N20
-2.95,PARACETAMOLIS Sanitas, 500 mg, tabletės, N20
+metu_kaina,metu_gramai,metu_tipas,metu_kiekis,PAVADIN
+5.17, 500 mg/6.1 mg/100 mg, kapsulės, N16,THERAFLU
+7.67, 1000 mg/60 mg/30 mg, milteliai geriamajam tirpalui, N10,THERAFLU ND
+7.05, 500 mg/30 mg, milteliai geriamajam tirpalui, N10,THERAFLU SN
+7.67, 1000 mg/60 mg/30 mg/4 mg, milteliai geriamajam tirpalui, N10,THERAFLU NT
+5.23, 500 mg/8 mg/30 mg, tabletės, N12,SOLPADEINE
+4.67, 500 mg/65 mg, šnypščiosios tabletės, N16,SOLPADEINE Express
+5.7, 500 mg/8 mg/30 mg, tirpinamosios tabletės, N12,SOLPADEINE
+2.3, 250 mg/150 mg/50 mg, tabletės, N10,SARIDON
+6.8, 500 mg, tabletės, N100,PARACETAMOLIS Sanitas
+2.31, 500 mg, tabletės, N20,PARAMAX Rapid
+7.67, 1000 mg/60 mg/30 mg, milteliai geriamajam tirpalui, N10,THERAFLU ND
+7.05, 500 mg/30 mg, milteliai geriamajam tirpalui, N10,THERAFLU SN
+7.67, 1000 mg/60 mg/30 mg/4 mg, milteliai geriamajam tirpalui, N10,THERAFLU NT
+5.23, 500 mg/8 mg/30 mg, tabletės, N12,SOLPADEINE
+4.67, 500 mg/65 mg, šnypščiosios tabletės, N16,SOLPADEINE Express
+5.7, 500 mg/8 mg/30 mg, tirpinamosios tabletės, N12,SOLPADEINE
+2.3, 250 mg/150 mg/50 mg, tabletės, N10,SARIDON
+6.8, 500 mg, tabletės, N100,PARACETAMOLIS Sanitas
+2.31, 500 mg, tabletės, N20,PARAMAX Rapid
+3.32, 125 mg, žvakutės, N10,PARACETAMOL-ratiopharm
+7.05, 500 mg/30 mg, milteliai geriamajam tirpalui, N10,THERAFLU SN
+7.67, NT 1000 mg/60 mg/30 mg/4 mg, milteliai geriamajam tirpalui, N10,THERAFLU
+5.23, 500 mg/8 mg/30 mg, tabletės, N12,SOLPADEINE
+4.67, Express 500 mg/65 mg, šnypščiosios tabletės, N16,SOLPADEINE
+5.7, 500 mg/8 mg/30 mg, tirpinamosios tabletės, N12,SOLPADEINE
+2.3, 250 mg/150 mg/50 mg, tabletės, N10,SARIDON
+6.8, 500 mg, tabletės, N100,PARACETAMOLIS Sanitas
+2.31, 500 mg, tabletės, N20,PARAMAX Rapid
+3.32, 125 mg, žvakutės, N10,PARACETAMOL-ratiopharm
+3.65, 250 mg, žvakutės, N10,PARACETAMOL-ratiopharm
+7.67, 1000 mg/60 mg/30 mg/4 mg, milteliai geriamajam tirpalui, N10,THERAFLU NT
+5.23, 500 mg/8 mg/30 mg, tabletės, N12,SOLPADEINE
+4.67, 500 mg/65 mg, šnypščiosios tabletės, N16,SOLPADEINE Express
+5.7, mg/30 mg tirpinamosios tabletės, N12,,SOLPADEINE 500 mg/8
+2.3, mg/50 mg, tabletės, N10,SARIDON 250 mg/150
+6.8, 500 mg, tabletės, N100,PARACETAMOLIS Sanitas
+2.31, 500 mg, tabletės, N20,PARAMAX Rapid
+3.32, 125 mg, žvakutės, N10,PARACETAMOL-ratiopharm
+3.65, 250 mg, žvakutės, N10,PARACETAMOL-ratiopharm
+2.29, 500 mg, tabletės, N20,PARACETAMOL Actavis
+5.23, 500 mg/8 mg/30 mg, tabletės, N12,SOLPADEINE
+4.67, 500 mg/65 mg, šnypščiosios tabletės, N16,SOLPADEINE Express
+5.7, 500 mg/8 mg/30 mg, tirpinamosios tabletės, N12,SOLPADEINE
+2.3, 250 mg/150 mg/50 mg, tabletės, N10,SARIDON
+6.8, 500 mg, tabletės, N100,PARACETAMOLIS Sanitas
+2.31, 500 mg, tabletės, N20,PARAMAX Rapid
+3.32, 125 mg, žvakutės, N10,PARACETAMOL-ratiopharm
+3.65, 250 mg, žvakutės, N10,PARACETAMOL-ratiopharm
+2.29, 500 mg, tabletės, N20,PARACETAMOL Actavis
+2.95, 500 mg, tabletės, N20,PARACETAMOLIS Sanitas
