@@ -5,42 +5,42 @@ import matplotlib.pyplot as plt
 EUROVAISTINE
 """
 
-# file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/eurovaistineVA.csv"
-# eurovaistine_df = pd.read_csv(file_path)
+file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/eurovaistineVA.csv"
+eurovaistine_df = pd.read_csv(file_path)
 
-# eurovaistine_df[['euro_pavadinimas', 'euro_gramai', 'euro_tipas', 'euro_kiekis']] = eurovaistine_df['pavadinimas'].str.split(",", n=3, expand=True)
-# # print(eurovaistine_df)
-#
-# # eurovaistine_df['kaina'] = eurovaistine_df['kaina']/ 100
+eurovaistine_df[['euro_pavadinimas', 'euro_gramai', 'euro_tipas', 'euro_kiekis']] = eurovaistine_df['pavadinimas'].str.split(",", n=3, expand=True)
+# print(eurovaistine_df)
+
+# eurovaistine_df['kaina'] = eurovaistine_df['kaina']/ 100
 
 """
 GAVOME PAGRINDINE LENTELE
 """
 
-# df_eurovaistine = pd.DataFrame(eurovaistine_df)
-# df_eurovaistine.to_csv('eurovaistineVA.csv', index=False)
+df_eurovaistine = pd.DataFrame(eurovaistine_df)
+df_eurovaistine.to_csv('eurovaistineVA.csv', index=False)
 # # print(df_eurovaistine)
 
 """
 PRATRYNEM STULPELIUS
 """
 
-# eurovaistine1_df = eurovaistine_df.drop(eurovaistine_df.columns[[0,1]], axis = 1)
-# eurovaistine2_df = eurovaistine1_df.rename(columns={'kaina':'euro_kaina'})
-# # print(eurovaistine1_df)
-# df_eurovaistine2 = pd.DataFrame(eurovaistine2_df)
-# df_eurovaistine2.to_csv('2eurovaistineVA.csv', index=False)
-# # print(df_eurovaistine2)
+eurovaistine1_df = eurovaistine_df.drop(eurovaistine_df.columns[[0,1]], axis = 1)
+eurovaistine2_df = eurovaistine1_df.rename(columns={'kaina':'euro_kaina'})
+# print(eurovaistine1_df)
+df_eurovaistine2 = pd.DataFrame(eurovaistine2_df)
+df_eurovaistine2.to_csv('2eurovaistineVA.csv', index=False)
+# print(df_eurovaistine2)
 
 """
 GAVOME KAINOS VIDURKI PAGAL VAISTINE
 """
 
-# filtered_df = df_eurovaistine2['euro_pavadinimas'].value_counts
-# print(filtered_df)
+filtered_euro_df = df_eurovaistine2['euro_pavadinimas'].value_counts
+# print(filtered_euro_df)
 
-# average_salary_by_departments = df.groupby('DEPARTMENT_ID')['SALARY'].mean().round(2)
-# print(average_salary_by_departments)
+average_kaina_euro_df= df_eurovaistine2.groupby('euro_pavadinimas')['euro_kaina'].mean().round(2)
+print(average_kaina_euro_df)
 
 """
 GINTARINE
@@ -77,6 +77,8 @@ GAVOME KAINOS VIDURKI PAGAL VAISTINE
 #
 #
 #
+
+
 """
 METU
 """
@@ -101,4 +103,6 @@ metu2_df = metu1_df.rename(columns={'2':'metu_kaina'})
 df_metu2 = pd.DataFrame(metu2_df)
 df_metu2.to_csv('2metuVA.csv', index=False)
 
-
+"""
+GAVOME KAINOS VIDURKI PAGAL VAISTINE
+"""
