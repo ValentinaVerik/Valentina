@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 EUROVAISTINE
 """
 
-# file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/eurovaistineVA.csv"
-# eurovaistine_df = pd.read_csv(file_path)
-#
-# eurovaistine_df[['PAVADIN', 'euro_gramai', 'euro_tipas', 'euro_kiekis']] = eurovaistine_df['pavadinimas'].str.split(",", n=3, expand=True)
+file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/eurovaistineVA.csv"
+eurovaistine_df = pd.read_csv(file_path)
+
+eurovaistine_df[['PAVADIN', 'euro_gramai', 'euro_tipas', 'euro_kiekis']] = eurovaistine_df['pavadinimas'].str.split(",", n=3, expand=True)
 # print(eurovaistine_df)
 
 # eurovaistine_df['kaina'] = eurovaistine_df['kaina']/ 100
@@ -18,19 +18,19 @@ EUROVAISTINE
 GAVOME PAGRINDINE LENTELE
 """
 
-# df_eurovaistine = pd.DataFrame(eurovaistine_df)
-# df_eurovaistine.to_csv('eurovaistineVA.csv', index=False)
+df_eurovaistine = pd.DataFrame(eurovaistine_df)
+df_eurovaistine.to_csv('eurovaistineVA.csv', index=False)
 # # print(df_eurovaistine)
 #
 # """
 # PRATRYNEM STULPELIUS
 # """
 #
-# eurovaistine1_df = eurovaistine_df.drop(eurovaistine_df.columns[[0,1,3]], axis = 1)
-# eurovaistine2_df = eurovaistine1_df.rename(columns={'kaina':'euro_kaina'})
-# # print(eurovaistine1_df)
-# df_eurovaistine2 = pd.DataFrame(eurovaistine2_df)
-# df_eurovaistine2.to_csv('2eurovaistineVA.csv', index=False)
+eurovaistine1_df = eurovaistine_df.drop(eurovaistine_df.columns[[0,1,3]], axis = 1)
+eurovaistine2_df = eurovaistine1_df.rename(columns={'kaina':'euro_kaina'})
+# print(eurovaistine1_df)
+df_eurovaistine2 = pd.DataFrame(eurovaistine2_df)
+df_eurovaistine2.to_csv('2eurovaistineVA.csv', index=False)
 # print(df_eurovaistine2)
 #
 # """
@@ -38,37 +38,37 @@ GAVOME PAGRINDINE LENTELE
 # """
 #
 # filtered_euro_df = df_eurovaistine2['euro_pavadinimas'].value_counts()
-# # print(filtered_euro_df)
+# print(filtered_euro_df)
 #
-# average_kaina_euro = SUM(filtered_euro_df).groupby('euro_pavadinimas')['euro_kaina'].mean().round(2)
+# average_kaina_euro = filtered_euro_df.groupby('euro_pavadinimas')['euro_kaina'].mean().round(2)
 # print(average_kaina_euro)
 
 """
 GINTARINE
 """
-# file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/gintarineVA.csv"
-# gintarine_df = pd.read_csv(file_path)
+file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/gintarineVA.csv"
+gintarine_df = pd.read_csv(file_path)
 #
-# gintarine_df[['PAVADIN', 'gintar_gramai', 'gintar_tipas', 'gintar_kiekis']] = gintarine_df['product__title'].str.split(",", n=3, expand=True)
+gintarine_df[['PAVADIN', 'gintar_gramai', 'gintar_tipas', 'gintar_kiekis']] = gintarine_df['product__title'].str.split(",", n=3, expand=True)
 # # print(gintarine_df)
 #
-# """
-# GAVOME PAGRINDINE LENTELE
-# """
+"""
+GAVOME PAGRINDINE LENTELE
+"""
 #
-# df_gintarine=pd.DataFrame(gintarine_df)
-# df_gintarine.to_csv('gintarineVA.csv', index=False)
-# # print(df_gintarine)
+df_gintarine=pd.DataFrame(gintarine_df)
+df_gintarine.to_csv('gintarineVA.csv', index=False)
+# print(df_gintarine)
 
 """
 PRATRYNEM STULPELIUS
 """
 
-# gintarine1_df = gintarine_df.drop(gintarine_df.columns[[0,1,3]], axis = 1)
-# gintarine2_df = gintarine1_df.rename(columns={'product__price--regular':'gintarine_kaina'})
-# # # print(gintarine1_df)
-# df_gintarine2 = pd.DataFrame(gintarine2_df)
-# df_gintarine2.to_csv('2gintarineVA.csv', index=False)
+gintarine1_df = gintarine_df.drop(gintarine_df.columns[[0,1,3]], axis = 1)
+gintarine2_df = gintarine1_df.rename(columns={'product__price--regular':'gintarine_kaina'})
+# print(gintarine1_df)
+df_gintarine2 = pd.DataFrame(gintarine2_df)
+df_gintarine2.to_csv('2gintarineVA.csv', index=False)
 # print(df_gintarine2)
 
 """
@@ -108,3 +108,16 @@ print(df_metu2)
 """
 GAVOME KAINOS VIDURKI PAGAL VAISTINE
 """
+
+
+
+
+"""
+SUJUNGIAM LENTELES
+"""
+
+sujungta_df = df_eurovaistine2.merge(df_gintarine2, on='PAVADIN').merge(df_metu2, on='PAVADIN')
+# print(sujungta_df)
+df_sujungta = pd.DataFrame(sujungta_df)
+df_sujungta.to_csv('sujungta.csv', index=False)
+print(sujungta_df)
