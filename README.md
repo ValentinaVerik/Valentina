@@ -39,8 +39,7 @@ todėl darbui toliau naudojame tris atskiras lenteles.
 Atlikome vaistinių asortimentų analizes ir sudarėme vizualizacijas:
 
 
-"""
-trys grafikai
+
 EUROVAISTINĖ VAISTINĖS ASORTIMENTO VIZUALIZACIJA
 ![img.png](img.png)
 
@@ -49,6 +48,7 @@ GINTARINĖ VAISTINĖS ASORTIMENTO VIZUALIZACIJA
 
 100 METŲ VAISTINĖS ASORTIMENTO VIZUALIZACIJA
 ![img_2.png](img_2.png)
+
 Atlikome kainų vidurkių analizę ir atvaizdavome grafike:
 
 """
