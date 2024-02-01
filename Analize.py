@@ -74,14 +74,14 @@ GAL TRINSIME
 EUROVAISTINĖS VAISTINĖS ASORTIMENTO ANALIZĖ
 '''
 
-sns.barplot(x='euro_kaina',y='Pav_pirmas_z',  data=eurovaistine3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
-plt.title('EUROVAISTINĖS ASORTIMENTAS')
-plt.ylabel('ASORTIMENTAS')
-plt.xlabel('KAINA, EUR')
-plt.legend([])
-# plt.savefig("Pictures\EURO ASORTIMENTAS.png")
-plt.tight_layout()
-plt.show()
+# sns.barplot(x='euro_kaina',y='Pav_pirmas_z',  data=eurovaistine3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
+# plt.title('EUROVAISTINĖS ASORTIMENTAS')
+# plt.ylabel('ASORTIMENTAS')
+# plt.xlabel('KAINA, EUR')
+# plt.legend([])
+# # plt.savefig("Pictures\EURO ASORTIMENTAS.png")
+# plt.tight_layout()
+# plt.show()
 
 """
 GINTARINE
@@ -123,7 +123,7 @@ print(gintarine_average_kaina)
 '''
 GINTARINĖS VAISTINĖS ASORTIMENTO ANALIZĖ
 '''
-df = pd.read_csv('2gintarineVA.csv')
+df2 = pd.read_csv('2gintarineVA.csv')
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 2000)
@@ -134,13 +134,13 @@ pd.set_option('display.width', 2000)
 # print(df.columns)
 # print(df.dtypes)
 
-sns.barplot(x='gintarine_kaina', y='Pav_pirmas_z',  data=gintarine3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
-plt.title('GINTARINES ASORTIMENTAS')
-plt.ylabel('ASORTIMENTAS')
-plt.xlabel('KAINA, EUR')
-plt.legend([])
-plt.tight_layout()
-plt.show()
+# sns.barplot(x='gintarine_kaina', y='Pav_pirmas_z',  data=gintarine3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
+# plt.title('GINTARINES ASORTIMENTAS')
+# plt.ylabel('ASORTIMENTAS')
+# plt.xlabel('KAINA, EUR')
+# plt.legend([])
+# plt.tight_layout()
+# plt.show()
 # plt.savefig("Pictures\GINTARINES ASORTIMENTAS.png")
 
 """
@@ -180,7 +180,7 @@ print(metu_average_kaina)
 '''
 100 METŲ VAISTINĖS ASORTIMENTO ANALIZĖ
 '''
-df = pd.read_csv('2metuVA.csv')
+df3 = pd.read_csv('2metuVA.csv')
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 2000)
@@ -214,10 +214,29 @@ pd.set_option('display.width', 2000)
 TRIJŲ VAISTINIŲ VIDUTINIŲ KAINŲ PALYGINIMAS/ATVAIZDAVIMAS
 """
 
+
+average_prices = [euro_average_kaina, gintarine_average_kaina, metu_average_kaina]
+pharmacies = ["Eurovaistine", 'Gintarine', "100Metu"]
+
+colors = ["yellow", "green", "red"]
+
 plt.figure(figsize = (12,6))
-plt.bar(eurovaistine3_df["euro_average_kaina"], gintarine3_df['gintarine_average_kaina'], metu3_df['metu_average_kaina'], color="teal")
+plt.bar(pharmacies, average_prices, color = colors)
 plt.title('Vidutinių kainų palyginimas')
 plt.xlabel('Vaistinės')
 plt.ylabel('Kaina, Eur')
 plt.grid(True)
 plt.show()
+
+
+
+# plt.rcParams["figure.figsize"] = (10, 10)
+# x = (eurovaistine3_df['euro_average_kaina'], gintarine3_df['gintarine_average_kaina'], metu3_df['metu_average_kaina'])
+# y =
+# plt.bar(x, y, color = '#800000')
+# colors = sns.color_palette()
+# plt.xlabel('')
+# plt.ylabel('')
+# plt.legend(["Eurovaistinė", "Gintarinė", '100metų'])
+# # plt.title("Ligonių gydymas pagal\n labiausiai paplitusias užkrečiamas ligas")
+# plt.show()

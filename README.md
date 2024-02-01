@@ -13,13 +13,13 @@ Pasirinktos duomenų bazės apimtis:
 Panaudotos vaistinių "Eurovaistinė", "Gintarinė' ir "100 metų" internetinių puslapių duomenų bazės. 
 Apimtis: trys lentelės, viso 169 eilutės, 21 stulpeliai.
 
-Darbas atliktas Python kalba, panaudojant bidliotekas:  **requests,** pandas, json, matplotlib, beautifulsoup ir seaborn.
+Darbas atliktas Python kalba, panaudojant bidliotekas:  requests, pandas, json, matplotlib, beautifulsoup ir seaborn.
 
 PROJEKTO SEKA
 
 Duomenys.py
 
-Panaudotos bibliotekos: **requests**, pandas, json, beautifulsoup 
+Panaudotos bibliotekos: requests, pandas, json, beautifulsoup 
 
 Suradome analizei reikalingus duomenis apie vaistų, turinčių "Paracetamol" veikliąją medžiagą Lietuvos atvirų duomenų portaluose, 
 tai yra trijų internetinių vaistinių "Eurovaistinė", "Gintarinė' ir "100 metų" internetinėse puslapiose;
@@ -41,12 +41,15 @@ Atlikome vaistinių asortimentų analizes ir sudarėme vizualizacijas:
 
 
 EUROVAISTINĖ VAISTINĖS ASORTIMENTO VIZUALIZACIJA
+
 ![img.png](img.png)
 
 GINTARINĖ VAISTINĖS ASORTIMENTO VIZUALIZACIJA
+
 ![img_1.png](img_1.png)
 
 100 METŲ VAISTINĖS ASORTIMENTO VIZUALIZACIJA
+
 ![img_2.png](img_2.png)
 
 
@@ -54,11 +57,11 @@ GINTARINĖ VAISTINĖS ASORTIMENTO VIZUALIZACIJA
 
 Atlikome kainų vidurkių analizę ir atvaizdavome grafike:
 
-"""
-vienas grafikas
-"""
+TRIJŲ VAISTINIŲ VIDUTINIŲ KAINŲ PALYGINIMO VIZUALIZACIJA
 
-Atlikome vieno vaisto kainų analizę lyginant tris vaistines:
+![img_5.png](img_5.png)
+
+Atlikome vieno vaisto kainų palyginimą trijuose vaistinėse:
 
 
 """
