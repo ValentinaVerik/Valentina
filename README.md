@@ -65,6 +65,6 @@ TRIJŲ VAISTINIŲ VIDUTINIŲ KAINŲ PALYGINIMO VIZUALIZACIJA
 _**ANALIZĖS IŠVADOS**_
 
 Palyginome vaistinių vaistų, turinčių "Paracetamol" veikliąją medžiagą, asortimentą ir nustatėme, kad didžiausias vaistų asortimentas yra  vaistinėje "Eurovaistinė".
-Nustatėmė, kad vaistų kainos, vertinant kainų vidurkį yra didžiausios vaistinėje 'Gintarine', o mažiausios vaistinėje '100 metų' vaistinėje. 
+Nustatėmė, kad vaistų kainos, vertinant kainų vidurkį yra didžiausios vaistinėje 'Gintarine', o mažiausios vaistinėje '100 metų'.
 
 
