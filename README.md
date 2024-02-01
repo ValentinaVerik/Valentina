@@ -4,7 +4,7 @@ Baigiamasis projektas Vilnius Coding School duomenų analitikos ir Python progra
 
 Darbo autoriai: Alina Pimpė ir Valentina Verikė
 
-Projekto tema: Vaistų Kainų Palyginimas Internetinėse Vaistinėse
+Projekto tema: Vaistų kainų palyginimas internetinėse vaistinėse
 
 Projekto tikslas: Šis projektas skirtas analizuoti ir palyginti vaistų, turinčių "Paracetamol" veikliąją medžiagą,  asortimentą ir kainas  įvairiose internetinėse vaistinėse. 
 Tikslas - identifikuoti arortimento ir kainų skirtumus, nustatyti pigiausias ir brangiausias vaistines.
