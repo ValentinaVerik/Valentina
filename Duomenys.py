@@ -2,14 +2,22 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
-#
+
+
+"""
+IŠTRAUKIAM DUOMENIS IŠ 'EUROVAISTINĖ' VAISTINĖS INTERNETINĖS SVETAINĖS
+"""
+
 # eurovaistine_data = []
 # for i in range(1, 3):
 #     target = f"https://www.eurovaistine.lt/paieska/rezultatai?q=paracetamolis&page={i}"
 #     response = requests.get(target)
 #     soup = BeautifulSoup(response.content, 'html.parser')
 #     script_tags = soup.find_all('script', type='application/json')
-#
+
+"""
+TVARKOMI DUOMENYS (JSON)
+"""
 #     for script in script_tags:
 #         data_component_name = script.get('data-component-name')
 #         if data_component_name and 'ProductsList' in data_component_name:
@@ -31,8 +39,9 @@ import json
 # df_eurovaistine.to_csv('eurovaistine.csv', index=False)
 # print(df_eurovaistine)
 
-
-
+"""
+IŠTRAUKIAM DUOMENIS IŠ 'GINTARINĖ' VAISTINĖS INTERNETINĖS SVETAINĖS
+"""
 # gintarine_data = []
 # for i in range(1, 4):
 #     target = f"https://www.gintarine.lt/search?q=paracetamolis&pagenumber={i}"
@@ -40,6 +49,9 @@ import json
 #     # print(response.status_code) # kodas 200
 #     soup = BeautifulSoup(response.content, 'html.parser')
 #
+"""
+TVARKOMI DUOMENYS (PANDAS)
+"""
 #     gintarine = soup.find_all('div', {'data-productid': True})
 #
 #     for product in gintarine:
@@ -61,14 +73,19 @@ import json
 # df_gintarine.to_csv('gintarine2.csv', index=False)
 # print(df_gintarine)
 
-
+"""
+IŠTRAUKIAM DUOMENIS IŠ '100 METŲ' VAISTINĖS INTERNETINĖS SVETAINĖS
+"""
 # metu_data=[]
 # for i in range(1,6):
 #     target = f"https://www.100metu.lt/search/p{i}?q=paracetamol"
 #     response=requests.get(target)
 #     # print(response.status_code) # kodas 200
 #     soup=BeautifulSoup(response.content,'html.parser')
-#
+
+"""
+TVARKOMI DUOMENYS (PANDAS)
+"""
 #     metu = soup.find_all('span', class_='info-cont')
 #     print(metu)
 #     for product in metu:
