@@ -61,12 +61,6 @@ TRIJŲ VAISTINIŲ VIDUTINIŲ KAINŲ PALYGINIMO VIZUALIZACIJA
 
 ![img_5.png](img_5.png)
 
-Atlikome vieno vaisto kainų palyginimą trijuose vaistinėse:
-
-
-"""
-vienas grafikas
-"""
 
 ANALIZĖS IŠVADOS
 
