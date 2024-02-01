@@ -1,84 +1,145 @@
 import pandas as pd
 import json
+import seaborn as sns
 import matplotlib.pyplot as plt
 
-"""
-EUROVAISTINE
-"""
-
-file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/eurovaistineVA.csv"
-eurovaistine_df = pd.read_csv(file_path)
-
-eurovaistine_df[['PAVADIN', 'euro_gramai', 'euro_tipas', 'euro_kiekis']] = eurovaistine_df['pavadinimas'].str.split(",", n=3, expand=True)
-# print(eurovaistine_df)
-
-# eurovaistine_df['kaina'] = eurovaistine_df['kaina']/ 100
-
-"""
-GAVOME PAGRINDINE LENTELE
-"""
-
-df_eurovaistine = pd.DataFrame(eurovaistine_df)
-df_eurovaistine.to_csv('eurovaistineVA.csv', index=False)
+# """
+# EUROVAISTINE
+# """
+#
+# file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/eurovaistineVA.csv"
+# eurovaistine_df = pd.read_csv(file_path)
+#
+# eurovaistine_df[['PAVADIN', 'euro_gramai', 'euro_tipas', 'euro_kiekis']] = eurovaistine_df['pavadinimas'].str.split(",", n=3, expand=True)
+# # print(eurovaistine_df)
+#
+# # eurovaistine_df['kaina'] = eurovaistine_df['kaina']/ 100
+#
+# """
+# GAVOME PAGRINDINE LENTELE
+# """
+#
+# df_eurovaistine = pd.DataFrame(eurovaistine_df)
+# df_eurovaistine.to_csv('eurovaistineVA.csv', index=False)
 # # print(df_eurovaistine)
 #
 # """
 # PRATRYNEM STULPELIUS
 # """
 #
-eurovaistine1_df = eurovaistine_df.drop(eurovaistine_df.columns[[0,1,3]], axis = 1)
-eurovaistine2_df = eurovaistine1_df.rename(columns={'kaina':'euro_kaina'})
-# print(eurovaistine1_df)
-df_eurovaistine2 = pd.DataFrame(eurovaistine2_df)
-df_eurovaistine2.to_csv('2eurovaistineVA.csv', index=False)
-# print(df_eurovaistine2)
+# eurovaistine1_df = eurovaistine_df.drop(eurovaistine_df.columns[[0,1,3]], axis = 1)
+# eurovaistine2_df = eurovaistine1_df.rename(columns={'kaina':'euro_kaina'})
+#
+# #print(eurovaistine2_df)
+# df_eurovaistine2 = pd.DataFrame(eurovaistine2_df)
+# df_eurovaistine2.to_csv('2eurovaistineVA.csv', index=False)
+# # print(df_eurovaistine2)
+# eurovaistine2_df[['Pav_pirmas_z', 'kita']] = eurovaistine2_df['PAVADIN'].str.split(" ",n=1, expand=True)
+# eurovaistine3_df = eurovaistine2_df.drop(eurovaistine2_df.columns[[6]], axis = 1)
+# df_eurovaistine3 = pd.DataFrame(eurovaistine3_df)
+# df_eurovaistine3.to_csv('2eurovaistineVA.csv', index=False)
+# # print(eurovaistine3_df)
+#
 #
 # """
 # GAVOME KAINOS VIDURKI PAGAL VAISTINE
 # """
 #
-# filtered_euro_df = df_eurovaistine2['euro_pavadinimas'].value_counts()
-# print(filtered_euro_df)
+# df = pd.read_csv('2eurovaistineVA.csv')
+# pd.set_option('display.max_rows', 500)
+# pd.set_option('display.max_columns', 500)
+# pd.set_option('display.width', 2000)
 #
-# average_kaina_euro = filtered_euro_df.groupby('euro_pavadinimas')['euro_kaina'].mean().round(2)
-# print(average_kaina_euro)
+# # print(df.head())
+# #
+# # print(df.shape)
+# # print(df.columns)
+# # print(df.dtypes)
+#
+#
+# euro_average_kaina = df_eurovaistine3['euro_kaina'].mean().round(2)
+# # print(euro_average_kaina)
+# '''
+# GAL TRINSIME
+# '''
+# # EURO_PRODUKTAI_df = df_eurovaistine3.groupby('Pav_pirmas_z').size()
+# # print(EURO_PRODUKTAI_df)
+# # palette_color = sns.color_palette ("deep")
+# # EURO_PRODUKTAI_df.plot.pie(y = 'PRODUkTAI', colors=palette_color, autopct='%.0f%%',legend=False, figsize = (30,10), textprops={'fontsize': 22})
+# # plt.ylabel('')
+# # plt.show()
+#
+# '''
+# EUROVAISTINĖS VAISTINĖS ASORTIMENTO ANALIZĖ
+# '''
+#
+# sns.barplot(x='euro_kaina',y='Pav_pirmas_z',  data=eurovaistine3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
+# plt.title('EUROVAISTINĖS ASORTIMENTAS')
+# plt.ylabel('ASORTIMENTAS')
+# plt.xlabel('KAINA, EUR')
+# plt.legend([])
+# # plt.savefig("Pictures\EURO ASORTIMENTAS.png")
+# plt.tight_layout()
+# plt.show()
 
 """
 GINTARINE
 """
-file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/gintarineVA.csv"
-gintarine_df = pd.read_csv(file_path)
+# file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/gintarineVA.csv"
+# gintarine_df = pd.read_csv(file_path)
 #
-gintarine_df[['PAVADIN', 'gintar_gramai', 'gintar_tipas', 'gintar_kiekis']] = gintarine_df['product__title'].str.split(",", n=3, expand=True)
+# gintarine_df[['PAVADIN', 'gintar_gramai', 'gintar_tipas', 'gintar_kiekis']] = gintarine_df['product__title'].str.split(",", n=3, expand=True)
 # # print(gintarine_df)
 #
-"""
-GAVOME PAGRINDINE LENTELE
-"""
+# """
+# GAVOME PAGRINDINE LENTELE
+# """
 #
-df_gintarine=pd.DataFrame(gintarine_df)
-df_gintarine.to_csv('gintarineVA.csv', index=False)
-# print(df_gintarine)
-
-"""
-PRATRYNEM STULPELIUS
-"""
-
-gintarine1_df = gintarine_df.drop(gintarine_df.columns[[0,1,3]], axis = 1)
-gintarine2_df = gintarine1_df.rename(columns={'product__price--regular':'gintarine_kaina'})
-# print(gintarine1_df)
-df_gintarine2 = pd.DataFrame(gintarine2_df)
-df_gintarine2.to_csv('2gintarineVA.csv', index=False)
-# print(df_gintarine2)
-
-"""
-GAVOME KAINOS VIDURKI PAGAL VAISTINE
-"""
-
+# df_gintarine=pd.DataFrame(gintarine_df)
+# df_gintarine.to_csv('gintarineVA.csv', index=False)
+# # print(df_gintarine)
 #
+# """
+#  PRATRYNEM STULPELIUS
+#  """
 #
+# gintarine1_df = gintarine_df.drop(gintarine_df.columns[[0,1,3]], axis = 1)
+# gintarine2_df = gintarine1_df.rename(columns={'product__price--regular':'gintarine_kaina'})
+# # print(gintarine1_df)
+# gintarine2_df[['Pav_pirmas_z', 'kita']] = gintarine2_df['PAVADIN'].str.split(" ",n=1, expand=True)
+# gintarine3_df = gintarine2_df.drop(gintarine2_df.columns[[6]], axis = 1)
+# df_gintarine3 = pd.DataFrame(gintarine3_df)
+# df_gintarine3.to_csv('2gintarineVA.csv', index=False)
+# # print(gintarine3_df)
 #
+# """
+# GAVOME KAINOS VIDURKI PAGAL VAISTINE
+# """
+# gintarine_average_kaina = df_gintarine3['gintarine_kaina'].mean().round(2)
+# print(gintarine_average_kaina)
 
+'''
+GINTARINĖS VAISTINĖS ASORTIMENTO ANALIZĖ
+'''
+# df = pd.read_csv('2gintarineVA.csv')
+# pd.set_option('display.max_rows', 500)
+# pd.set_option('display.max_columns', 500)
+# pd.set_option('display.width', 2000)
+#
+# print(df.head())
+#
+# print(df.shape)
+# print(df.columns)
+# print(df.dtypes)
+#
+# sns.barplot(x='gintarine_kaina', y='Pav_pirmas_z',  data=gintarine3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
+# plt.title('GINTARINES ASORTIMENTAS')
+# plt.ylabel('ASORTIMENTAS')
+# plt.xlabel('KAINA, EUR')
+# plt.legend([])
+# # plt.savefig("Pictures\GINTARINES ASORTIMENTAS.png")
+# plt.tight_layout()
+# plt.show()
 
 """
 METU
@@ -102,22 +163,47 @@ metu1_df = metu_df.drop(metu_df.columns[[0,1,3]], axis = 1)
 metu2_df = metu1_df.rename(columns={'2':'metu_kaina'})
 # print(metu1_df)
 
-df_metu2 = pd.DataFrame(metu2_df)
-df_metu2.to_csv('2metuVA.csv', index=False)
-print(df_metu2)
+metu2_df[['Pav_pirmas_z', 'kita']] = metu2_df['PAVADIN'].str.split(" ",n=1, expand=True)
+metu3_df = metu2_df.drop(metu2_df.columns[[6]], axis = 1)
+df_metu3 = pd.DataFrame(metu3_df)
+df_metu3.to_csv('2metuVA.csv', index=False)
+# print(metu3_df)
+
 """
 GAVOME KAINOS VIDURKI PAGAL VAISTINE
 """
+metu_average_kaina = df_metu3['metu_kaina'].mean().round(2)
+# print(metu_average_kaina)
 
+'''
+GINTARINĖS VAISTINĖS ASORTIMENTO ANALIZĖ
+'''
+df = pd.read_csv('2metuVA.csv')
+pd.set_option('display.max_rows', 500)
+pd.set_option('display.max_columns', 500)
+pd.set_option('display.width', 2000)
 
-
-
-"""
-SUJUNGIAM LENTELES
-"""
-
-sujungta_df = df_eurovaistine2.merge(df_gintarine2, on='PAVADIN').merge(df_metu2, on='PAVADIN')
+# print(df.head())
+#
+# print(df.shape)
+# print(df.columns)
+# print(df.dtypes)
+#
+sns.barplot(x='metu_kaina', y='Pav_pirmas_z',  data=metu3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
+plt.title('100 METU ASORTIMENTAS')
+plt.ylabel('ASORTIMENTAS')
+plt.xlabel('KAINA, EUR')
+plt.legend([])
+# plt.savefig("Pictures\GINTARINES ASORTIMENTAS.png")
+plt.tight_layout()
+plt.show()
+#
+# """
+# SUJUNGIAM LENTELES
+# """
+#
+# sujungta_df = df_eurovaistine2.merge(df_gintarine2, on='PAVADIN').merge(df_metu2, on='PAVADIN')
+# # print(sujungta_df)
+# df_sujungta = pd.DataFrame(sujungta_df)
+# df_sujungta.to_csv('sujungta.csv', index=False)
 # print(sujungta_df)
-df_sujungta = pd.DataFrame(sujungta_df)
-df_sujungta.to_csv('sujungta.csv', index=False)
-print(sujungta_df)
