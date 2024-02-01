@@ -1,6 +1,6 @@
 ****_AV_BAIGIAMASIS_DARBAS_****
 
-Baigiamasis projektas Vilnius Coding School duomenų analitikos ir python programavimo pagrindų kursui
+Baigiamasis projektas Vilnius Coding School duomenų analitikos ir Python programavimo pagrindų kursui
 
 Darbo autoriai: Alina Pimpė ir Valentina Verikė
 
