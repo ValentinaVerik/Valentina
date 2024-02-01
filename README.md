@@ -30,6 +30,7 @@ Suformavome tris .csv lenteles: eurovaistineVA.csv, gintarineVA.csv ir metuVa.cs
 _Analize.py_
 
 Panaudotos bibliotekos: pandas, matplotlib, seaborn, matplotlib ir beautifulsoup
+
 Atlikome duomenų gryninimo veiksmus: padalinome stulpelius "Pavadinimas" į 4 naujus stulpelius, pagal požymį ",".
 Patikslinome tris .csv lenteles: 2eurovaistineVA.csv, 2gintarineVA.csv ir 2metuVa.csv
 Apskaičiavome kainų vidurkius kiekvienoje vaistinėje.
