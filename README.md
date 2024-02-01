@@ -1,4 +1,4 @@
-AV_BAIGIAMASIS_DARBAS
+****_AV_BAIGIAMASIS_DARBAS_****
 
 Baigiamasis projektas Vilnius Coding School duomenų analitikos ir python programavimo pagrindų kursui
 
@@ -15,9 +15,9 @@ Apimtis: trys lentelės, viso 169 eilutės, 21 stulpeliai.
 
 Darbas atliktas Python kalba, panaudojant bidliotekas:  requests, pandas, json, matplotlib, beautifulsoup ir seaborn.
 
-PROJEKTO SEKA
+**_PROJEKTO SEKA_**
 
-Duomenys.py
+_Duomenys.py_
 
 Panaudotos bibliotekos: requests, pandas, json, beautifulsoup 
 
@@ -27,7 +27,7 @@ Išsirinktus duomenis suformatavome .json formatu;
 Duomenis eksportavome dataframe formatais kiekvienai vaistinei atskirai.
 Suformavome tris .csv lenteles: eurovaistineVA.csv, gintarineVA.csv ir metuVa.csv
 
-Analize.py
+_Analize.py_
 
 Panaudotos bibliotekos: pandas, matplotlib, seaborn, matplotlib ir beautifulsoup
 Atlikome duomenų gryninimo veiksmus: padalinome stulpelius "Pavadinimas" į 4 naujus stulpelius, pagal požymį ",".
@@ -62,8 +62,9 @@ TRIJŲ VAISTINIŲ VIDUTINIŲ KAINŲ PALYGINIMO VIZUALIZACIJA
 ![img_5.png](img_5.png)
 
 
-ANALIZĖS IŠVADOS
+_**ANALIZĖS IŠVADOS**_
 
-Palyginome vaistinių vaistų, turinčių "Paracetamol" veikliąją medžiagą, asortimentą ir nustatėme, kad didžiausias vaistų asortimentas yra  vaistinėje "Gintarinė".
-Panašu, kad vaistų kainos, vertinant kainų vidurkį, yra didžiausios .................. , o mažiausios .............. vaistinėje. 
-Analizuojant tuo paties vaisto kainas nustatėme, kad pigiausias   ........, brang ......
+Palyginome vaistinių vaistų, turinčių "Paracetamol" veikliąją medžiagą, asortimentą ir nustatėme, kad didžiausias vaistų asortimentas yra  vaistinėje "Eurovaistinė".
+Nustatėmė, kad vaistų kainos, vertinant kainų vidurkį yra didžiausios vaistinėje 'Gintarine', o mažiausios vaistinėje '100 metų' vaistinėje. 
+
+
