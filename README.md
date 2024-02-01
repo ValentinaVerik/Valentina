@@ -49,6 +49,9 @@ GINTARINĖ VAISTINĖS ASORTIMENTO VIZUALIZACIJA
 100 METŲ VAISTINĖS ASORTIMENTO VIZUALIZACIJA
 ![img_2.png](img_2.png)
 
+
+
+
 Atlikome kainų vidurkių analizę ir atvaizdavome grafike:
 
 """
