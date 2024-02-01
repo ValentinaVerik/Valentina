@@ -6,36 +6,58 @@ Darbo autoriai: Alina Pimpė ir Valentina Verikė
 
 Projekto tema: Vaistų Kainų Palyginimas Internetinėse Vaistinėse
 
-Projekto tikslas: Šis projektas skirtas analizuoti ir palyginti vaistų kainas įvairiose internetinėse vaistinėse. 
-Tikslas - identifikuoti kainų skirtumus, nustatyti pigiausias ir brangiausias vaistines, bei išsiaiškinti, 
-kaip kainos skiriasi priklausomai nuo vaistinės vietos, vaistų prekės ženklo ar kitų veiksnių.
+Projekto tikslas: Šis projektas skirtas analizuoti ir palyginti vaistų, turinčių "Paracetamol" veikliąją medžiagą,  asortimentą ir kainas  įvairiose internetinėse vaistinėse. 
+Tikslas - identifikuoti arortimento ir kainų skirtumus, nustatyti pigiausias ir brangiausias vaistines.
 
-Pasirinktos duomenų bazės apimtis: 198916 eilučių, 16 stulpelių.
+Pasirinktos duomenų bazės apimtis: 
+Panaudotos vaistinių "Eurovaistinė", "Gintarinė' ir "100 metų" internetinių puslapių duomenų bazės. 
+Apimtis: trys lentelės, viso 169 eilutės, 21 stulpeliai.
 
-Darbas atliktas Python kalba, panaudojant Postgres duomenų bazę ir json failą.
+Darbas atliktas Python kalba, panaudojant bidliotekas:  **requests,** pandas, json, matplotlib, beautifulsoup ir seaborn.
+
 PROJEKTO SEKA
 
-SKREIPINIMAS.PY
+Duomenys.py
 
-Panaudotos bibliotekos: requests, pandas, json
+Panaudotos bibliotekos: **requests**, pandas, json, beautifulsoup 
 
-    Suradome analizei reikalingus duomenis apie užkrečiamas ligas iš Lietuvos atvirų duomenų portale esančios Nacionalinio visuomenės sveikatos centro užkrečiamų ligų duomenų bazės;
-    Išsirinktus duomenis suformatavome .json formatu;
-    Gauti duomenys buvo žodyno formato, todėl atsirinkome raktus, pagal kuriuos išsifiltravome duomenis;
-    Duomenis iš skreipinimo eksportavome dataframe formatu
+Suradome analizei reikalingus duomenis apie vaistų, turinčių "Paracetamol" veikliąją medžiagą Lietuvos atvirų duomenų portaluose, 
+tai yra trijų internetinių vaistinių "Eurovaistinė", "Gintarinė' ir "100 metų" internetinėse puslapiose;
+Išsirinktus duomenis suformatavome .json formatu;
+Duomenis eksportavome dataframe formatais kiekvienai vaistinei atskirai.
+Suformavome tris .csv lenteles: eurovaistineVA.csv, gintarineVA.csv ir metuVa.csv
 
-DATABASE.PY
+Analize.py
 
-Panaudotos bibliotekos: requests, psycopg2, pandas
+Panaudotos bibliotekos: pandas, matplotlib, seaborn, matplotlib ir beautifulsoup
+Atlikome duomenų gryninimo veiksmus: padalinome stulpelius "Pavadinimas" į 4 naujus stulpelius, pagal požymį ",".
+Patikslinome tris .csv lenteles: 2eurovaistineVA.csv, 2gintarineVA.csv ir 2metuVa.csv
+Apskaičiavome kainų vidurkius kiekvienoje vaistinėje.
+Bandėme apjungti tris lenteles į vieną, tačiau gavome nekorektiškus dumenis, geresnis rezultatas buvo jungiant tik dvi lenteles, 
+todėl darbui toliau naudojame tris atskiras lenteles.
 
-    Duomenis iš skreipinimo.py failo importavome dataframe formatu;
-    Prisijungėme prie Postgres duomenų bazės, kad galėtume sukurti duomenų bazę;
-    Sukūrėme naują duomenų bazę, kad galėtume lokaliai saugoti atsisiųstus duomenis;
-    Sukūrėme funkcijas, kurių pagalba duomenis sukėlėme į susikurtą duomenų bazę;
-    Sukūrėme funkciją, kuri duomenis iš naujos duomenų bazės eksportavo dataframe formatu
+Atlikome vaistinių asortimentų analizes ir sudarėme vizualizacijas:
 
-ANALYSIS.PY
 
-Panaudotos bibliotekos: pandas, matplotlib, seaborn, datetime, numpy
+"""
+trys grafikai
+"""
 
-    Suradome penkias labiausiai paplitusias užkrečiamas ligas ir nusibraižėme jų grafiką;
+Atlikome kainų vidurkių analizę ir atvaizdavome grafike:
+
+"""
+vienas grafikas
+"""
+
+Atlikome vieno vaisto kainų analizę lyginant tris vaistines:
+
+
+"""
+vienas grafikas
+"""
+
+ANALIZĖS IŠVADOS
+
+Palyginome vaistinių vaistų, turinčių "Paracetamol" veikliąją medžiagą, asortimentą ir nustatėme, kad didžiausias vaistų asortimentas yra  vaistinėje "Gintarinė".
+Panašu, kad vaistų kainos, vertinant kainų vidurkį, yra didžiausios .................. , o mažiausios .............. vaistinėje. 
+Analizuojant tuo paties vaisto kainas nustatėme, kad pigiausias   ........, brang ......
