@@ -85,100 +85,44 @@ import matplotlib.pyplot as plt
 """
 GINTARINE
 """
-# file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/gintarineVA.csv"
-# gintarine_df = pd.read_csv(file_path)
-#
-# gintarine_df[['PAVADIN', 'gintar_gramai', 'gintar_tipas', 'gintar_kiekis']] = gintarine_df['product__title'].str.split(",", n=3, expand=True)
-# # print(gintarine_df)
-#
-# """
-# GAVOME PAGRINDINE LENTELE
-# """
-#
-# df_gintarine=pd.DataFrame(gintarine_df)
-# df_gintarine.to_csv('gintarineVA.csv', index=False)
-# # print(df_gintarine)
-#
-# """
-#  PRATRYNEM STULPELIUS
-#  """
-#
-# gintarine1_df = gintarine_df.drop(gintarine_df.columns[[0,1,3]], axis = 1)
-# gintarine2_df = gintarine1_df.rename(columns={'product__price--regular':'gintarine_kaina'})
-# # print(gintarine1_df)
-# gintarine2_df[['Pav_pirmas_z', 'kita']] = gintarine2_df['PAVADIN'].str.split(" ",n=1, expand=True)
-# gintarine3_df = gintarine2_df.drop(gintarine2_df.columns[[6]], axis = 1)
-# df_gintarine3 = pd.DataFrame(gintarine3_df)
-# df_gintarine3.to_csv('2gintarineVA.csv', index=False)
-# # print(gintarine3_df)
-#
-# """
-# GAVOME KAINOS VIDURKI PAGAL VAISTINE
-# """
-# gintarine_average_kaina = df_gintarine3['gintarine_kaina'].mean().round(2)
+file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/gintarineVA.csv"
+gintarine_df = pd.read_csv(file_path)
+
+gintarine_df[['PAVADIN', 'gintar_gramai', 'gintar_tipas', 'gintar_kiekis']] = gintarine_df['product__title'].str.split(",", n=3, expand=True)
+# print(gintarine_df)
+
+"""
+GAVOME PAGRINDINE LENTELE
+"""
+
+df_gintarine=pd.DataFrame(gintarine_df)
+df_gintarine.to_csv('gintarineVA.csv', index=False)
+# print(df_gintarine)
+
+"""
+PRATRYNEM STULPELIUS
+ """
+gintarine_df['product__price--regular'] = gintarine_df['product__price--regular'].str.replace('N/A', '0')
+gintarine1_df = gintarine_df.drop(gintarine_df.columns[[0,1,3]], axis = 1)
+gintarine2_df = gintarine1_df.rename(columns={'product__price--regular':'gintarine_kaina'})
+gintarine2_df['gintarine_kaina'] = pd.to_numeric(gintarine2_df['gintarine_kaina']).replace('N/A', '')
+# print(gintarine2_df)
+gintarine2_df[['Pav_pirmas_z', 'kita']] = gintarine2_df['PAVADIN'].str.split(" ",n=1, expand=True)
+gintarine3_df = gintarine2_df.drop(gintarine2_df.columns[[6]], axis = 1)
+df_gintarine3 = pd.DataFrame(gintarine3_df)
+df_gintarine3.to_csv('2gintarineVA.csv', index=False)
+# print(gintarine3_df)
+
+"""
+GAVOME KAINOS VIDURKI PAGAL VAISTINE
+"""
+gintarine_average_kaina = df_gintarine3['gintarine_kaina'].mean().round(2)
 # print(gintarine_average_kaina)
 
 '''
 GINTARINĖS VAISTINĖS ASORTIMENTO ANALIZĖ
 '''
-# df = pd.read_csv('2gintarineVA.csv')
-# pd.set_option('display.max_rows', 500)
-# pd.set_option('display.max_columns', 500)
-# pd.set_option('display.width', 2000)
-#
-# print(df.head())
-#
-# print(df.shape)
-# print(df.columns)
-# print(df.dtypes)
-#
-# sns.barplot(x='gintarine_kaina', y='Pav_pirmas_z',  data=gintarine3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
-# plt.title('GINTARINES ASORTIMENTAS')
-# plt.ylabel('ASORTIMENTAS')
-# plt.xlabel('KAINA, EUR')
-# plt.legend([])
-# # plt.savefig("Pictures\GINTARINES ASORTIMENTAS.png")
-# plt.tight_layout()
-# plt.show()
-
-"""
-METU
-"""
-
-file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/metu_VA.csv"
-metu_df = pd.read_csv(file_path)
-
-metu_df[['PAVADIN', 'metu_gramai', 'metu_tipas', 'metu_kiekis']] = metu_df['1'].str.split(",", n=3, expand=True)
-# print(metu_df)
-"""
-GAVOME PAGRINDINĘ LENTELĘ
-"""
-df_metu=pd.DataFrame(metu_df)
-df_metu.to_csv('metu_VA.csv', index=False)
-# print(df_metu)
-"""
-PRATRYNĖM LENTELĘ
-"""
-metu1_df = metu_df.drop(metu_df.columns[[0,1,3]], axis = 1)
-metu2_df = metu1_df.rename(columns={'2':'metu_kaina'})
-# print(metu1_df)
-
-metu2_df[['Pav_pirmas_z', 'kita']] = metu2_df['PAVADIN'].str.split(" ",n=1, expand=True)
-metu3_df = metu2_df.drop(metu2_df.columns[[6]], axis = 1)
-df_metu3 = pd.DataFrame(metu3_df)
-df_metu3.to_csv('2metuVA.csv', index=False)
-# print(metu3_df)
-
-"""
-GAVOME KAINOS VIDURKI PAGAL VAISTINE
-"""
-metu_average_kaina = df_metu3['metu_kaina'].mean().round(2)
-# print(metu_average_kaina)
-
-'''
-GINTARINĖS VAISTINĖS ASORTIMENTO ANALIZĖ
-'''
-df = pd.read_csv('2metuVA.csv')
+df = pd.read_csv('2gintarineVA.csv')
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 2000)
@@ -188,16 +132,73 @@ pd.set_option('display.width', 2000)
 # print(df.shape)
 # print(df.columns)
 # print(df.dtypes)
-#
-sns.barplot(x='metu_kaina', y='Pav_pirmas_z',  data=metu3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
-plt.title('100 METU ASORTIMENTAS')
+
+sns.barplot(x='gintarine_kaina', y='Pav_pirmas_z',  data=gintarine3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
+plt.title('GINTARINES ASORTIMENTAS')
 plt.ylabel('ASORTIMENTAS')
 plt.xlabel('KAINA, EUR')
 plt.legend([])
-# plt.savefig("Pictures\GINTARINES ASORTIMENTAS.png")
 plt.tight_layout()
 plt.show()
+# plt.savefig("Pictures\GINTARINES ASORTIMENTAS.png")
+
+"""
+METU
+"""
+
+# file_path = "C:/Users/Vytautas/PycharmProjects/pythonKursas/Valentina/metu_VA.csv"
+# metu_df = pd.read_csv(file_path)
 #
+# metu_df[['PAVADIN', 'metu_gramai', 'metu_tipas', 'metu_kiekis']] = metu_df['1'].str.split(",", n=3, expand=True)
+# # print(metu_df)
+# """
+# GAVOME PAGRINDINĘ LENTELĘ
+# """
+# df_metu=pd.DataFrame(metu_df)
+# df_metu.to_csv('metu_VA.csv', index=False)
+# # print(df_metu)
+# """
+# PRATRYNĖM LENTELĘ
+# """
+# metu1_df = metu_df.drop(metu_df.columns[[0,1,3]], axis = 1)
+# metu2_df = metu1_df.rename(columns={'2':'metu_kaina'})
+# # print(metu1_df)
+#
+# metu2_df[['Pav_pirmas_z', 'kita']] = metu2_df['PAVADIN'].str.split(" ",n=1, expand=True)
+# metu3_df = metu2_df.drop(metu2_df.columns[[6]], axis = 1)
+# df_metu3 = pd.DataFrame(metu3_df)
+# df_metu3.to_csv('2metuVA.csv', index=False)
+# # print(metu3_df)
+#
+# """
+# GAVOME KAINOS VIDURKI PAGAL VAISTINE
+# """
+# metu_average_kaina = df_metu3['metu_kaina'].mean().round(2)
+# print(metu_average_kaina)
+
+'''
+GINTARINĖS VAISTINĖS ASORTIMENTO ANALIZĖ
+'''
+# df = pd.read_csv('2metuVA.csv')
+# pd.set_option('display.max_rows', 500)
+# pd.set_option('display.max_columns', 500)
+# pd.set_option('display.width', 2000)
+
+# print(df.head())
+#
+# print(df.shape)
+# print(df.columns)
+# print(df.dtypes)
+#
+# sns.barplot(x='metu_kaina', y='Pav_pirmas_z',  data=metu3_df, hue='Pav_pirmas_z', palette='Set2', dodge=False)
+# plt.title('100 METU ASORTIMENTAS')
+# plt.ylabel('ASORTIMENTAS')
+# plt.xlabel('KAINA, EUR')
+# plt.legend([])
+# # plt.savefig("Pictures\GINTARINES ASORTIMENTAS.png")
+# plt.tight_layout()
+# plt.show()
+# #
 # """
 # SUJUNGIAM LENTELES
 # """

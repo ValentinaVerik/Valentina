@@ -5,13 +5,13 @@ gintarine_kaina,gintar_gramai,gintar_tipas,gintar_kiekis,PAVADIN,Pav_pirmas_z
 5.37, , tabletės, N12,SOLPADEINE,SOLPADEINE
 4.84, 500 mg/65 mg, šnypščiosios tabletės, N16,SOLPADEINE EXPRESS,SOLPADEINE
 3.58, 500 mg, plėvele dengtos tabletės, N24,APAP,APAP
-2.30, , tabletės, N10,SARIDON,SARIDON
+2.3, , tabletės, N10,SARIDON,SARIDON
 2.29, 500 mg, tabletės, N20,PARACETAMOL ACTAVIS,PARACETAMOL
 3.44, 500 mg, tabletės, N20,PARACETAMOLIS SANITAS,PARACETAMOLIS
-5.70, , tirpinamosios tabletės, N12,SOLPADEINE,SOLPADEINE
+5.7, , tirpinamosios tabletės, N12,SOLPADEINE,SOLPADEINE
 5.57, 250 mg, granulės paketėlyje vaikams, N10,APAP,APAP
 4.03, 500 mg/150 mg, plėvele dengtos tabletės, N10,ADOBIL,ADOBIL
-3.90, 80 mg, žvakutės, N10,EFFERALGAN,EFFERALGAN
+3.9, 80 mg, žvakutės, N10,EFFERALGAN,EFFERALGAN
 3.32, 125 mg, žvakutės, N10,PARACETAMOL-RATIOPHARM,PARACETAMOL-RATIOPHARM
 3.65, 250 mg, žvakutės, N10,PARACETAMOL-RATIOPHARM,PARACETAMOL-RATIOPHARM
 5.01, 30 mg/ml, geriamasis tirpalas vaikams, 90 ml,EFFERALGAN,EFFERALGAN
@@ -25,15 +25,15 @@ gintarine_kaina,gintar_gramai,gintar_tipas,gintar_kiekis,PAVADIN,Pav_pirmas_z
 4.99, , plėvele dengtos tabletės, N12,DALERON COLD3,DALERON
 6.95, 1000/100/12.2 mg, milteliai geriamajam tirpalui, N8,GRIPEX THERMAL,GRIPEX
 7.87, 1000 mg/10 mg/40 mg, milteliai geriamajam tirpalui, N10,COLDREX MAXGRIP LEMON,COLDREX
-5.70, 500/30/15 mg, plėvele dengtos tabletės, N10,GRIPEX,GRIPEX
+5.7, 500/30/15 mg, plėvele dengtos tabletės, N10,GRIPEX,GRIPEX
 7.87, , plėvele dengtos tabletės, N24,DALERON COLD3,DALERON
-7.90, , plėvele dengtos tabletės, N24,GRIPEX,GRIPEX
+7.9, , plėvele dengtos tabletės, N24,GRIPEX,GRIPEX
 5.57, 1000 mg/60 mg/30 mg, milteliai geriamajam tirpalui, N6,THERAFLU ND,THERAFLU
 3.58, , tabletės, N20,NEOCITRAMONAS,NEOCITRAMONAS
 5.29, , plėvele dengtos tabletės, N12,GRIPEX,GRIPEX
 6.26, 24mg/ml, geriamoji suspensija kūdikiams ir vaikams, 100 ml,PANADOL,PANADOL
 4.09, 150 mg, žvakutės, N10,EFFERALGAN,EFFERALGAN
-6.80, 500 mg, tabletės, N100,PARACETAMOLIS SANITAS,PARACETAMOLIS
+6.8, 500 mg, tabletės, N100,PARACETAMOLIS SANITAS,PARACETAMOLIS
 16.74, 10 mg/ml, infuzinis tirpalas, 100 ml N10,PARACETAMOL KABI,PARACETAMOL
 4.84, 750 mg/10 mg/60 mg, milteliai geriamajam tirpalui, N5,COLDREX HOTREM LEMON,COLDREX
 8.55, , granulės geriamajam tirpalui suaugusiems be cukraus, N8,FERVEX,FERVEX
@@ -43,7 +43,7 @@ gintarine_kaina,gintar_gramai,gintar_tipas,gintar_kiekis,PAVADIN,Pav_pirmas_z
 7.87, 750 mg/10 mg/60 mg, milteliai geriamajam tirpalui, N10,COLDREX HOTREM HONEY & LEMON,COLDREX
 6.95, 300/20/5 mg, milteliai geriamajam tirpalui, N12,GRIPEX THERMAL,GRIPEX
 4.84, , tabletės, N12,COLDREX,COLDREX
-6.40, , milteliai geriamajam tirpalui, N6,THERAFLU NT,THERAFLU
+6.4, , milteliai geriamajam tirpalui, N6,THERAFLU NT,THERAFLU
 8.43, , tabletės, N100,NEOASKOFENAS,NEOASKOFENAS
 4.67, 1000 mg/10 mg/40 mg, milteliai geriamajam tirpalui, N5,COLDREX MAXGRIP LEMON,COLDREX
 7.87, 1000 mg/10 mg/70 mg, milteliai geriamajam tirpalui, N10,COLDREX MAXGRIP MENTHOL & BERRIES,COLDREX
@@ -54,8 +54,8 @@ gintarine_kaina,gintar_gramai,gintar_tipas,gintar_kiekis,PAVADIN,Pav_pirmas_z
 3.99, 500 mg/200 mg/4 mg, šnypščiosios tabletės, N10,ALIFLUSIN,ALIFLUSIN
 4.99, 500 mg/200 mg/4 mg, šnypščiosios granulės, N10,ALIFLUSIN,ALIFLUSIN
 7.99, 500 mg/200 mg/4 mg, šnypščiosios granulės, N20,ALIFLUSIN,ALIFLUSIN
- N/A , 500 mg, šnypščiosios tabletės, N16,EFFERALGAN,EFFERALGAN
- N/A , 330 mg/200 mg, šnypščiosios tabletės, N20,EFFERALGAN C,EFFERALGAN
- N/A , 1000 mg, tabletės, N5,PARAMAX RAPID,PARAMAX
- N/A, , tabletės, N24,COLDREX,COLDREX
- N/A , 30 mg/500 mg, plėvele dengtos tabletės, N30,COCODAMOL,COCODAMOL
+0.0, 500 mg, šnypščiosios tabletės, N16,EFFERALGAN,EFFERALGAN
+0.0, 330 mg/200 mg, šnypščiosios tabletės, N20,EFFERALGAN C,EFFERALGAN
+0.0, 1000 mg, tabletės, N5,PARAMAX RAPID,PARAMAX
+0.0, , tabletės, N24,COLDREX,COLDREX
+0.0, 30 mg/500 mg, plėvele dengtos tabletės, N30,COCODAMOL,COCODAMOL
